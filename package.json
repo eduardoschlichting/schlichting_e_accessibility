@@ -1,0 +1,22 @@
+{
+  "name": "accessibility_practice",
+  "version": "1.0.0",
+  "description": "Accessibility App with Node and Express",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoschlichting/schlichting_e_accessibility.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoschlichting/schlichting_e_accessibility/issues"
+  },
+  "homepage": "https://github.com/eduardoschlichting/schlichting_e_accessibility#readme"
+}
