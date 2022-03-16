@@ -1,15 +1,17 @@
-// const http = require('http');
-import { createServer } from 'http';
+import express from 'express';
 
-// const hostname = '127.0.0.1';
+const app = express();
+
 const port = process.env.PORT || 3000;
 
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+app.get('/', (req, res) => {
+  res.send('Hello from Express!');
+})
 
-server.listen(port, () => {
+app.get('/audio', (req, res) => {
+  res.send('Hello from audio!');
+})
+
+app.listen(port, () => {
   console.log(`App running at ${port}/`);
 });

@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/eduardoschlichting/schlichting_e_accessibility/issues"
   },
-  "homepage": "https://github.com/eduardoschlichting/schlichting_e_accessibility#readme"
+  "homepage": "https://github.com/eduardoschlichting/schlichting_e_accessibility#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
