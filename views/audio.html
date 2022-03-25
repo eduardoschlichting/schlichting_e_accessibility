@@ -4,18 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Audio Page</title>
   </head>
   <body>
     <main class="app">
-      <header>
+      <header class="nav_header">
         <h1 class="hidden">Media</h1>
-        <h2>Welcome to the audio app!</h2>
-        <ul>
-          <li><a href="/">Video</a></li>
-          <li><a href="/audio">Audio</a></li>
-        </ul>
+
+        <nav>
+          <ul>
+            <li><a href="/">Video</a></li>
+            <li><a href="/audio">Audio</a></li>
+          </ul>
+        </nav>
       </header>
+
+      <section class="intro">
+        <h2>Audio Streaming Page</h2>
+
+        <p>Here you can enjoy your favourite songs!</p>
+      </section>
+
+      <section id="audio-container">
+        <audio class="player" controls>
+          <source src="/images/billy_joel_vienna.mp3" />
+          <!-- fallback for browsers that don't support video tag -->
+          <a href="billy_joel_vienna.mp3">download audio</a>
+        </audio>
+
+        <aside class="transcript collapser">
+          <header class="transcript__head">
+            <!-- <h2>Transcript</h2> -->
+            <span class="sr-only">Video Transcript</span>
+            <button class="transcript-toggle">Show full transcript</button>
+          </header>
+
+          <p>
+            [00:00:00] Slow down. You crazy child. You're so ambitious for a
+            juvenile, but then if you are so smart, tell me why are you still so
+            afraid?
+          </p>
+
+          <p>
+            [00:00:31] Where's the fire? What's the hurry out to be better? Cool
+            it off before you burn it out. You got so much to do and only so
+            many hours in a day.
+          </p>
+
+          <p>
+            [00:00:47] But you know that when the truth is told that you can get
+            what you want or you can just get old, you gonna kick off before you
+            even get halfway through. Ooh. When will you realize Vienna waits
+            For you
+          </p>
+
+          <p>
+            [00:01:10] slow down. You're doing fine. You can't be everything you
+            wanna be before your time. Although so romantic on the borderline
+            tonight, tonight too bad buddy, is the life you lead your soul ahead
+            of yourself that you forgot what you need though. You could see when
+            you are wrong, you know, you can't always see when you're right,
+          </p>
+
+          <p>
+            [00:01:40] you got your passion, you got your pride, but don't, you
+            know, that all the fools are satisfied on, but don't imagine they
+            all come. Ooh. When will you will realize... Vienna waits for you?
+          </p>
+
+          <p>
+            [00:02:21] Slown down you crazy child and take the phone off the
+            hook and disappear for a while, it's alright, you can affort to lose
+            a day or two..
+          </p>
+
+          <p>[00:02:33] When will you realize Vienna waits for you?</p>
+
+          <p>
+            [00:02:42] And you know that when the truth is told, you can get
+            what you want or you can just get over your off, you even get
+            halfway through
+          </p>
+
+          <p>
+            [00:03:00] When you realize... Vienna waits for you... When will you
+            realize.. Vienna waits for you.
+          </p>
+        </aside>
+      </section>
     </main>
+
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

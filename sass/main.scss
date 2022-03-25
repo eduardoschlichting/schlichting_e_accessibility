@@ -1,0 +1,61 @@
+@import "modules/reset";
+@import "modules/vars";
+@import "modules/transcript";
+@import "modules/nav";
+
+.hidden {
+  display: none;
+}
+
+body {
+  position: relative;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Screen reader only - hides from visual browser but available for screen-readers */
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.intro {
+  max-width: 500px;
+  padding-right: 2em;
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    line-height: 1.5em;
+    max-width: 70ch;
+  }
+}
+
+#video-container {
+  max-width: 600px;
+}
+
+.plyr {
+  border-radius: 10px;
+
+  -webkit-box-shadow: 5px 14px 14px 11px rgba(206, 204, 255, 0.22);
+  box-shadow: 5px 0 10px 11px rgba(206, 204, 255, 0.22);
+}

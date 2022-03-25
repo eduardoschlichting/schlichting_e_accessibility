@@ -4,18 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index page</title>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Video Page</title>
   </head>
+
   <body>
     <main class="app">
-      <header>
-        <h1 class="hidden">Media</h1>
-        <h2>Welcome to the accessibility app!</h2>
-        <ul>
-          <li><a href="/">Video</a></li>
-          <li><a href="/audio">Audio</a></li>
-        </ul>
+      <header class="nav_header">
+        <h1 class="hidden">Media Accessibility</h1>
+
+        <nav>
+          <ul>
+            <li><a href="/">Video</a></li>
+            <li><a href="/audio">Audio</a></li>
+          </ul>
+        </nav>
       </header>
+
+
+      <section class="intro">
+        <h2>Video Streaming Page</h2>
+
+        <p>Here you can watch your favourite video however you want to! Enjoy!</p>
+
+      </section>
+
+      <section id="video-container">
+        <video class="player" crossorigin playsinline controls>
+          <source src="images/video_cc.mp4" type="video/mp4" />
+
+          <!-- fallback for browsers that don't support video tag -->
+          <a href="video_cc.mp4">download video</a>
+
+          <!-- Captions are another accessibily resource for videos and people with hearing impairements -->
+          <track
+            kind="captions"
+            label="English"
+            srclang="en"
+            src="images/video_cc.vtt"
+            default
+          />
+        </video>
+
+        <!-- <div class="controls">
+          <button class="playpause">
+            Play <span class="sr-only">video</span>
+          </button>
+          <button class="stop">Stop <span class="sr-only">video</span></button>
+          <button class="rwd">Rewind <span class="sr-only">video</span></button>
+          <button class="fwd">
+            Fast Forward <span class="sr-only">video</span>
+          </button>
+          <div class="time">00:00</div>
+        </div>
+      </section> -->
+
+      <!-- Here's a video transcript as well -->
+      <aside class="transcript collapser">
+        <header class="transcript__head">
+          <!-- <h2>Transcript</h2> -->
+          <span class="sr-only">Video Transcript</span>
+          <button class="transcript-toggle">Show full transcript</button>
+        </header>
+
+        <p>
+          [00:00:00] The ocean floor rises five miles to the shores of what
+          people call the seven mile miracle.
+        </p>
+
+        <p>
+          [00:00:22] Lovers me, what would it be like to be born on this island?
+          Would've
+        </p>
+
+        <p>
+          [00:00:32] to grow up on these shores? I was always to, to witness
+          this water. Every day,
+        </p>
+
+        <p>[00:00:43] you're about to meet someone who did.</p>
+
+        <p>[00:01:13] One for three.</p>
+
+        <p>[00:01:31] Turn.</p>
+
+        <p>[00:02:45] This is a film about. On John Florence.</p>
+      </aside>
     </main>
+
+    <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
